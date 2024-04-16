@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78" height="78" viewBox="0 0 78 78">
+  <defs>
+    <filter id="Icon_awesome-plus-square" x="0" y="0" width="78" height="78" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="add_btn" data-name="add btn" transform="translate(15 9)">
+    <rect id="Rectangle_30" data-name="Rectangle 30" width="40" height="48" transform="translate(4)" fill="#467765"/>
+    <rect id="Rectangle_19" data-name="Rectangle 19" width="40" height="40" transform="translate(4 4)" fill="#fdfdfb"/>
+    <g transform="matrix(1, 0, 0, 1, -15, -9)" filter="url(#Icon_awesome-plus-square)">
+      <path id="Icon_awesome-plus-square-2" data-name="Icon awesome-plus-square" d="M42.857,2.25H5.143A5.144,5.144,0,0,0,0,7.393V45.107A5.144,5.144,0,0,0,5.143,50.25H42.857A5.144,5.144,0,0,0,48,45.107V7.393A5.144,5.144,0,0,0,42.857,2.25Zm-3.429,27a1.289,1.289,0,0,1-1.286,1.286H28.286v9.857A1.289,1.289,0,0,1,27,41.679H21a1.289,1.289,0,0,1-1.286-1.286V30.536H9.857A1.289,1.289,0,0,1,8.571,29.25v-6a1.289,1.289,0,0,1,1.286-1.286h9.857V12.107A1.289,1.289,0,0,1,21,10.821h6a1.289,1.289,0,0,1,1.286,1.286v9.857h9.857a1.289,1.289,0,0,1,1.286,1.286Z" transform="translate(15 6.75)" fill="#467765"/>
+    </g>
+  </g>
+</svg>

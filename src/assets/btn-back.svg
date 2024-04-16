@@ -1,0 +1,5 @@
+<svg id="back_btn" data-name="back btn" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <rect id="Rectangle_26" data-name="Rectangle 26" width="48" height="48" rx="4" fill="#467765"/>
+  <path id="Path_2061" data-name="Path 2061" d="M370.641,1355.571l-9.348,10.011v15.568l7.478,6.618,16.832,1.082,10.4-14.34s-2.123-15.591-3.191-14.424S370.641,1355.571,370.641,1355.571Z" transform="translate(-354.294 -1348.571)" fill="#fff"/>
+  <path id="Icon_awesome-arrow-alt-circle-left" data-name="Icon awesome-arrow-alt-circle-left" d="M22,43.438A21.438,21.438,0,1,1,43.438,22,21.434,21.434,0,0,1,22,43.438ZM32.027,18.2H22V12.068a1.038,1.038,0,0,0-1.772-.735l-9.88,9.932a1.028,1.028,0,0,0,0,1.461l9.88,9.932A1.037,1.037,0,0,0,22,31.923V25.8H32.027a1.04,1.04,0,0,0,1.037-1.037V19.234A1.04,1.04,0,0,0,32.027,18.2Z" transform="translate(2.438 2.438)" fill="#467765"/>
+</svg>
