@@ -52,6 +52,7 @@ a {
     flex-direction: column;
     padding: 1rem;
     top: 0;
+    z-index: +5;
 
     a {
         color: white;

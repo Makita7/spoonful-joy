@@ -1,5 +1,5 @@
 <script setup>
-import { RouterView, RouterLink } from 'vue-router';
+import { RouterView } from 'vue-router';
 import NavMenu from './components/NavMenu.vue';
 
 </script>
@@ -9,7 +9,9 @@ import NavMenu from './components/NavMenu.vue';
   <header class="d-flex" style="align-items: flex-start;">
     <NavMenu />
     <v-spacer />
-    <img src="./assets/logo.png" alt="spoonful of joy logo" class="mr-4">
+    <router-link to="/">
+      <img src="./assets/logo.png" alt="spoonful of joy logo" class="mr-4">
+    </router-link>
   </header>
 
   <main>
