@@ -1,27 +1,32 @@
 <script setup>
 import LikeComponent from './LikeComponent.vue';
+import { useRecipesStore } from '@/stores/recipesStore';
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
 
 const props = defineProps({
     title: String,
     img: String,
+    id: Number,
     data: Object,
 })
 
 </script>
 
 <template>
-    <v-card class="mx-4 pa-4 card">
-        <router-link to="/recipe">
+    <v-card class="mx-4 pa-4 card mb-6">
+        <router-link :to="{ name: 'recipe', params: { id: id } }">
             <div class="d-flex mb-2">
                 <img :src="img" :alt="title" class="mx-auto" />
             </div>
         </router-link>
         <div class="d-flex align-center">
-            <router-link to="/recipe">
+            <router-link :to="{ name: 'recipe', params: { id: id } }">
                 <h3>{{ title }}</h3>
             </router-link>
             <v-spacer />
-            <LikeComponent />
+            <LikeComponent :title="title" :id="id" />
         </div>
     </v-card>
 </template>
@@ -32,8 +37,9 @@ const props = defineProps({
 
     img {
         background-color: aliceblue;
-        border-radius: 6rem;
+        border-radius: 4rem;
         padding: 7px;
+        width: 100%;
     }
 }
 

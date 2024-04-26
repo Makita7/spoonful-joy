@@ -3,7 +3,16 @@ import MainPage from '@/pages/MainPage.vue'
 
 const routes = [
     { path: '/', component: MainPage },
-    { path: '/recipe', component: () => import('/src/pages/RecipePage.vue') },
+    {
+        name: 'recipe',
+        path: '/recipe/:id',
+        component: () => import('/src/pages/RecipePage.vue'),
+        props: {
+            default: (route) => ({
+                id: route.params.id,
+            }),
+        },
+    },
     { path: '/edit', component: () => import('/src/pages/EditAddPage.vue') }
 ]
 

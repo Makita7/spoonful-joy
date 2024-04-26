@@ -8,6 +8,7 @@ let data = recipeStore.randomRecipes;
 
 onMounted(() => {
     recipeStore.getMainRecipes();
+
 })
 
 </script>
@@ -15,8 +16,8 @@ onMounted(() => {
 <template>
     <div>
         <h2 class="text-center mb-2">My Recipes</h2>
-        data:{{ data }}
-        <RecipeCardPreview v-for="i in data" :key i.id :title="i.title" :img="i.image" :data="i" />
+        <RecipeCardPreview v-for="i in data.recipes" :key i.id :title="i.title" :id="i.id" :img="i.image" :data="i" />
+        <p v-for="i in data.recipes">{{ i.id }}</p>
     </div>
 </template>
 

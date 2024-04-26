@@ -1,7 +1,20 @@
 <script setup>
 import { ref } from 'vue';
+import { useFavoritesStore } from '@/stores/favorites';
 
 let like = ref(false);
+
+const props = defineProps({
+    title: String,
+    id: Number,
+})
+
+onMounted(() => {
+    let isLiked = ref(false);
+
+}),
+
+
 </script>
 
 <template>
