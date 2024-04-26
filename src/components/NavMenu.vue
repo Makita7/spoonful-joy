@@ -26,7 +26,7 @@ const navTitles = ref([
                 <v-spacer />
                 <img src="../assets/white-logo.png" alt="white spoonful of joy logo" class="logo" />
             </div>
-            <RouterLink v-for="i in navTitles" to="i.to" class="pb-2">{{ i.title }}</RouterLink>
+            <RouterLink v-for="i in navTitles" :to="i.to" @click="open = false" class="pb-2">{{ i.title }}</RouterLink>
             <div class="d-flex">
                 <v-spacer />
                 <img src="../assets/btn-back.svg" alt="back button" @click="open = !open" />

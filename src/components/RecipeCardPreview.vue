@@ -1,7 +1,11 @@
 <script setup>
-import { ref } from 'vue';
+import LikeComponent from './LikeComponent.vue';
 
-let like = ref(false);
+const props = defineProps({
+    title: String,
+    img: String,
+    data: Object,
+})
 
 </script>
 
@@ -9,19 +13,15 @@ let like = ref(false);
     <v-card class="mx-4 pa-4 card">
         <router-link to="/recipe">
             <div class="d-flex mb-2">
-                <img src="../assets/food-appetizer.png" alt="name of food" class="mx-auto" />
+                <img :src="img" :alt="title" class="mx-auto" />
             </div>
         </router-link>
         <div class="d-flex align-center">
             <router-link to="/recipe">
-                <h3>Title of Dish</h3>
+                <h3>{{ title }}</h3>
             </router-link>
             <v-spacer />
-            <div style="position: relative;">
-                <v-icon class="heart-w">mdi-heart</v-icon>
-                <v-icon class="heart" @click="like = !like">{{ like ? 'mdi-heart' : 'mdi-heart-outline'
-                    }}</v-icon>
-            </div>
+            <LikeComponent />
         </div>
     </v-card>
 </template>
