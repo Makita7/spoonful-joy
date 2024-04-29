@@ -4878,11 +4878,16 @@ export const useRecipesStore = defineStore('recipeStore', () => {
     }
 
     function getMainRecipes(){
-        if(randomRecipes.value != null){
-            RecipeServices.getRandomRecipes(10)
-                .then(res => randomRecipes.value = res.recipes)
+        if(!randomRecipes.value){
+            return RecipeServices.getRandomRecipes(10)
+                .then(res => {
+                    randomRecipes.value = res.recipes
+                    return res.recipes;
+                })
                 .catch(err => console.log(err))
                 .finally(() => console.log('done'))
+        }else{
+            return Promise.resolve(randomRecipes.value);
         }
     }
 

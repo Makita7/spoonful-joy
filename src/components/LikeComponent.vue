@@ -4,15 +4,15 @@ import { useFavoritesStore } from '@/stores/favorites';
 
 let like = ref(false);
 
-const props = defineProps({
+const props = ref({
     title: String,
     id: Number,
 })
 
-onMounted(() => {
-    let isLiked = ref(false);
+// onMounted(() => {
+//     let isLiked = ref(false);
 
-}),
+// }),
 
 
 </script>
