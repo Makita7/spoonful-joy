@@ -3,25 +3,11 @@ import { ref, watch, onMounted } from 'vue';
 import LikeComponent from '@/components/LikeComponent.vue';
 import PreperationStep from '@/components/PreperationStep.vue';
 import { useRecipesStore } from '@/stores/recipesStore';
-import { useRoute } from 'vue-router'
+import { useRoute } from 'vue-router';
 
 const recipeStore = useRecipesStore();
 const route = useRoute();
 const recipe = ref([]);
-
-// const AsyncLoading = new Promise((resolve, reject) => {
-//     if (recipeStore.randomRecipes.recipes !== undefined) {
-//         resolve(recipe.value = recipeStore.randomRecipes.recipes.filter(i => i.id === route.params.id)[0])
-//     } else {
-//         reject(console.log(`${route.params.id} recipe was not found, sorry...`))
-//     }
-// })
-
-// watch(() => recipeStore.randomRecipes.recipes, async (newData, oldData) => {
-//     if (newData !== oldData && newData !== null) {
-//         recipe.value = newData.filter(i => i.id === 644800)[0]
-//
-// })
 
 onMounted(() => {
     recipeStore.getMainRecipes()
@@ -38,7 +24,7 @@ onMounted(() => {
         <div class="d-flex align-center">
             <h3>{{ recipe.title }}</h3>
             <v-spacer />
-            <LikeComponent />
+            <LikeComponent :title="recipe.title" :id="recipe.id" />
         </div>
         <h4>Ingredients</h4>
         <ul class="px-8">

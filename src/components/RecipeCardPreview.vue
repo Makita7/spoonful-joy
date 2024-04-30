@@ -26,7 +26,7 @@ const props = defineProps({
                 <h3>{{ title }}</h3>
             </router-link>
             <v-spacer />
-            <LikeComponent :title="title" :id="id" />
+            <LikeComponent :title="props.title" :id="props.id" />
         </div>
     </v-card>
 </template>

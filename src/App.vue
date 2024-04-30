@@ -14,7 +14,7 @@ import NavMenu from './components/NavMenu.vue';
     </router-link>
   </header>
 
-  <main>
+  <main class=" pb-8">
     <RouterView />
   </main>
 </template>

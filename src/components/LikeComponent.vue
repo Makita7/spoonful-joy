@@ -1,26 +1,31 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted, defineProps, computed } from 'vue';
 import { useFavoritesStore } from '@/stores/favorites';
 
-let like = ref(false);
+let isLiked = ref(false);
+let favStore = useFavoritesStore();
 
-const props = ref({
+const props = defineProps({
     title: String,
     id: Number,
 })
 
-// onMounted(() => {
-//     let isLiked = ref(false);
+function ToggleLike() {
+    favStore.toggleFavs(props.id, props.title);
+    isLiked.value = !isLiked.value;
+}
 
-// }),
-
+onMounted(() => {
+    isLiked.value = favStore.checkFavs(props.id);
+})
 
 </script>
 
 <template>
     <div style="position: relative;">
         <v-icon class="heart-w">mdi-heart</v-icon>
-        <v-icon class="heart" @click="like = !like">{{ like ? 'mdi-heart' : 'mdi-heart-outline'
+        <v-icon class="heart" @click="ToggleLike">{{ isLiked ? 'mdi-heart' :
+            'mdi-heart-outline'
             }}</v-icon>
     </div>
 </template>
