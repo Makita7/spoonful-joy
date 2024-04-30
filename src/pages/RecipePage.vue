@@ -14,7 +14,6 @@ onMounted(() => {
         .then(data => {
             recipe.value = data.recipes.filter(i => i.id == route.params.id)[0]
         })
-
 })
 
 </script>

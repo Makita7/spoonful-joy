@@ -1,9 +1,5 @@
 <script setup>
 import LikeComponent from './LikeComponent.vue';
-import { useRecipesStore } from '@/stores/recipesStore';
-import { useRoute } from 'vue-router';
-
-const route = useRoute();
 
 const props = defineProps({
     title: String,

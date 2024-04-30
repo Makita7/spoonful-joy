@@ -4891,8 +4891,5 @@ export const useRecipesStore = defineStore('recipeStore', () => {
         }
     }
 
-    const setWantInfo = ref(null);
-
-
     return { randomRecipes, getMainRecipes }
 })

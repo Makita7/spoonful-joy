@@ -1,6 +1,7 @@
 <script setup>
-import { ref, onMounted, defineProps, computed } from 'vue';
+import { ref, onMounted, defineProps, watch } from 'vue';
 import { useFavoritesStore } from '@/stores/favorites';
+import { useRoute } from 'vue-router';
 
 let isLiked = ref(false);
 let favStore = useFavoritesStore();
@@ -9,6 +10,7 @@ const props = defineProps({
     title: String,
     id: Number,
 })
+const route = useRoute();
 
 function ToggleLike() {
     favStore.toggleFavs(props.id, props.title);
@@ -17,6 +19,12 @@ function ToggleLike() {
 
 onMounted(() => {
     isLiked.value = favStore.checkFavs(props.id);
+})
+
+watch(route, (newRoute) => {
+    if (newRoute) {
+        isLiked.value = favStore.checkFavs(props.id);
+    }
 })
 
 </script>
