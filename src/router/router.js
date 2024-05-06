@@ -13,7 +13,12 @@ const routes = [
             }),
         },
     },
-    { path: '/edit', component: () => import('/src/pages/EditAddPage.vue') }
+    { path: '/edit', component: () => import('/src/pages/EditAddPage.vue') },
+    {
+        path: "/:patchMatch(.*)*",
+        name: 'notFound',
+        component: () => import('/src/pages/PageNotFound.vue'),
+    },
 ]
 
 const router = createRouter({
