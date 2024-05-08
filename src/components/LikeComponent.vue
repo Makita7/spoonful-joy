@@ -21,8 +21,9 @@ onMounted(() => {
     isLiked.value = favStore.checkFavs(props.id);
 })
 
-watch(route, (newRoute) => {
-    if (newRoute) {
+watch(props, (oldProps, newProps) => {
+    if (oldProps !== newProps) {
+        console.log(props, 'watcher')
         isLiked.value = favStore.checkFavs(props.id);
     }
 })

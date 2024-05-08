@@ -1,9 +1,10 @@
 <script setup>
-import { ref, watch, onMounted } from 'vue';
+import { ref, onMounted } from 'vue';
 import LikeComponent from '@/components/LikeComponent.vue';
 import PreperationStep from '@/components/PreperationStep.vue';
 import { useRecipesStore } from '@/stores/recipesStore';
 import { useRoute } from 'vue-router';
+import ServingIcon from '@/assets/icon-people.svg'
 
 const recipeStore = useRecipesStore();
 const route = useRoute();
@@ -27,23 +28,30 @@ onMounted(() => {
         </div>
         <h4>Ingredients</h4>
         <ul class="px-8">
-            <li v-for="i in recipe.extendedIngredients"><span class="text-capitalize">{{ i.name }}</span> {{ i.amount }}
-                {{ i.unit
-                }}</li>
+            <li v-for="i in recipe.extendedIngredients">
+                <span class="text-capitalize">{{ i.name }}</span>
+                {{ i.amount }}
+                {{ i.unit }}
+            </li>
         </ul>
-        <div class="d-flex mt-3 mb-4">
-            <div class="d-flex px-2">
-                Servings:
-                {{ recipe.servings }}
+        <div class="d-flex mt-4 mb-4 detail">
+            <v-spacer />
+            <div class="d-flex px-2 align-center">
+                <img class="icons" src="../assets/icon-people.svg" />
+                <p class="ml-2">{{ recipe.servings }}</p>
             </div>
-            <div class="d-flex px-2">
-                readyInMinutes:
-                {{ recipe.readyInMinutes }}
+            <v-spacer />
+            <div class="d-flex px-2 align-center">
+                <img class="icons" src="../assets/icon-time.svg" />
+                <p class="ml-2">{{ recipe.readyInMinutes }} min</p>
             </div>
+            <v-spacer />
         </div>
-        <div class="">
-            diets:
-            <p v-for="d in recipe.diets">{{ d }}</p>
+        <div class="mb-4">
+            <h4>Diets:</h4>
+            <ul class="px-8">
+                <li v-for="d in recipe.diets" :key="d" class="text-capitalize">{{ d }}</li>
+            </ul>
         </div>
         <h4 class="pb-2">Preparation</h4>
         <PreperationStep v-if="recipe.analyzedInstructions" v-for="step in recipe.analyzedInstructions[0].steps"
@@ -75,6 +83,17 @@ onMounted(() => {
         border-radius: 4rem;
         padding: 7px;
         width: 100%;
+    }
+
+    .detail {
+        p {
+            font-size: 1.5rem;
+        }
+
+        .icons {
+            width: 56px !important;
+            height: auto;
+        }
     }
 }
 </style>

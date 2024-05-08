@@ -14,9 +14,9 @@ export const useFavoritesStore = defineStore('favorites', () => {
                 })
             }else{
                 const index = favs.value.findIndex(i => i.id === idDish);
-                favs = favs.value.splice(index, 1);
+                favs.value.splice(index, 1);
             }
-            console.log('if', favs.value)
+            console.log('if', favs)
         }else{
             favs.value.push({
                 id: idDish,
@@ -28,13 +28,12 @@ export const useFavoritesStore = defineStore('favorites', () => {
         if(favs.value === undefined){
             favs.value = []
         }
-        console.log(favs.value)
+        return favs
     }
 
     function checkFavs(idDish){
-        if(favs.value.length > 1){
-            console.log(`checked ${favs.map(i => i.id == idDish)[0]}`)
-            return favs.map(i => i.id == idDish)[0];
+        if(favs.value.length >= 1){
+            return favs.value.find(i => i.id == idDish);
         }
     }
 
