@@ -20,19 +20,19 @@ const navTitles = ref([
 <template>
     <img src="../assets/btn-navbar.svg" alt="navigation menu icon" class="icon mt-4 ml-4" @click="open = !open" />
 
-    <div class="nav-bg" v-if="open">
-        <div class="colorfilter d-flex flex-column px-8 pt-2 pb-2">
-            <div class="d-flex">
-                <v-spacer />
-                <img src="../assets/white-logo.png" alt="white spoonful of joy logo" class="logo" />
-            </div>
-            <RouterLink v-for="i in navTitles" :to="i.to" @click="open = false" class="pb-2">{{ i.title }}</RouterLink>
-            <div class="d-flex">
-                <v-spacer />
-                <img src="../assets/btn-back.svg" alt="back button" @click="open = !open" />
+    <Transition name="fade" mode="out-in">
+        <div class="nav-bg" v-if="open">
+            <div class="colorfilter d-flex flex-column px-8 pt-2 pb-2">
+                <div class="d-flex">
+                    <v-spacer />
+                    <img src="../assets/white-logo.png" alt="white spoonful of joy logo" class="logo" />
+                </div>
+                <RouterLink v-for="i in navTitles" :to="i.to" @click="open = false" class="pb-2 link">{{ i.title }}
+                </RouterLink>
+                <img class="backBtn" src="../assets/btn-back.svg" alt="back button" @click="open = !open" />
             </div>
         </div>
-    </div>
+    </Transition>
 </template>
 
 <style lang="scss" scoped>
@@ -75,5 +75,26 @@ a {
     .logo {
         width: 11rem;
     }
+
+    .backBtn {
+        bottom: 2rem;
+        right: 2rem;
+        position: absolute;
+    }
+
+    .link:hover {
+        font-size: 1.9rem;
+        transition: ease-in-out 0.5s;
+    }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: 0.5s ease all;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
 }
 </style>
