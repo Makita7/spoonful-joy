@@ -31,7 +31,7 @@ watch(props, (oldProps, newProps) => {
 </script>
 
 <template>
-    <div style="position: relative;">
+    <div style="position: relative;" class="hover">
         <v-icon class="heart-w">mdi-heart</v-icon>
         <v-icon class="heart" @click="ToggleLike">{{ isLiked ? 'mdi-heart' :
             'mdi-heart-outline'
@@ -40,6 +40,11 @@ watch(props, (oldProps, newProps) => {
 </template>
 
 <style scoped lang="scss">
+.hover:hover {
+    transition: ease-in-out 0.3s;
+    transform: scale(1.08);
+}
+
 .heart {
     color: var(--coral);
     font-size: 2rem;

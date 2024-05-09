@@ -30,6 +30,7 @@ const props = defineProps({
 <style scoped lang="scss">
 .card {
     background-color: var(--beige-l);
+    border-radius: 2rem;
 
     img {
         background-color: aliceblue;

@@ -4,17 +4,26 @@ import { RouterLink } from 'vue-router';
 
 <template>
     <div class="text-center">
-        <h2>404</h2>
+        <p class="top font-weight-bold text-uppercase">Page not found</p>
+        <h2 class="top">404</h2>
+        <img alt="404 not found" src="../assets/empty-plate-404.png" class="mx-auto" />
         <p>
-            Page not found,
-            <br />
-            click to go
+            Go
             <RouterLink to="/">Home</RouterLink>
         </p>
     </div>
 </template>
 
 <style scoped lang="scss">
+.top {
+    color: var(--coral);
+
+}
+
+p {
+    font-size: 1.2rem !important;
+}
+
 a {
     color: var(--black);
     font-weight: bolder;
@@ -23,6 +32,11 @@ a {
 h2 {
     font-weight: bolder;
     font-size: 5rem;
-    color: var(--coral);
+    margin-top: -1.4rem;
+}
+
+img {
+    width: 70%;
+    margin-top: -0.5rem;
 }
 </style>
