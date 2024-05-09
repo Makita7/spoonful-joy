@@ -42,4 +42,10 @@ import NavMenu from './components/NavMenu.vue';
 .fade-leave-to {
   opacity: 0;
 }
+
+:deep() {
+  .v-field--variant-filled .v-field__overlay {
+    background-color: white;
+  }
+}
 </style>

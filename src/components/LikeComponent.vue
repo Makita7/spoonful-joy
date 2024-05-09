@@ -21,22 +21,21 @@ onMounted(() => {
     isLiked.value = favStore.checkFavs(props.id);
 })
 
-watch(props, (oldProps, newProps) => {
-    if (oldProps !== newProps) {
-        console.log(props, 'watcher')
-        isLiked.value = favStore.checkFavs(props.id);
-    }
+watch(() => props.id, async () => {
+    console.log(props, 'watcher')
+    isLiked.value = favStore.checkFavs(props.id);
 })
 
 </script>
 
 <template>
-    <div style="position: relative;" class="hover">
+    <div style="position: relative;" class="hover" v-if="props.id">
         <v-icon class="heart-w">mdi-heart</v-icon>
         <v-icon class="heart" @click="ToggleLike">{{ isLiked ? 'mdi-heart' :
             'mdi-heart-outline'
             }}</v-icon>
     </div>
+    <p v-else>loading</p>
 </template>
 
 <style scoped lang="scss">
