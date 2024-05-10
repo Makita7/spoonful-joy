@@ -14,7 +14,7 @@ import NavMenu from './components/NavMenu.vue';
     </router-link>
   </header>
 
-  <main class=" pb-8">
+  <main class="">
     <RouterView v-slot="{ Component }">
       <Transition name="fade" mode="out-in">
         <component :is="Component" />

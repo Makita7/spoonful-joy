@@ -4,15 +4,8 @@ import { ref } from 'vue';
 let open = ref(false);
 const navTitles = ref([
     { title: 'My Recipes', to: '/' },
-    { title: 'Breakfasts', to: '/' },
-    // { title: 'Appetizers', to: '/' },
-    // { title: 'Salads', to: '/' },
-    // { title: 'Pastas', to: '/' },
-    // { title: 'Lunch / Diner', to: '/' },
-    // { title: 'Salads', to: '/' },
-    // { title: 'Desserts', to: '/' },
-    // { title: 'Cold Beverages', to: '/' },
-    // { title: 'Hot Beverages', to: '/' },
+    { title: 'My Feed', to: '/' },
+    { title: 'Edit', to: '/edit' },
 ]);
 
 </script>

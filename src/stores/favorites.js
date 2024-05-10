@@ -32,7 +32,6 @@ export const useFavoritesStore = defineStore('favorites', () => {
     }
 
     function checkFavs(idDish){
-        debugger;
         if(favs.value.length >= 1){
             return favs.value.find(i => i.id == idDish);
         }

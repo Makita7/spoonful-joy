@@ -4,6 +4,7 @@ import { ref } from 'vue';
 
 export const useRecipesStore = defineStore('recipeStore', () => {
     let randomRecipes = ref(null);
+    let myRecipes = ref([]);
 
     randomRecipes.value = {
         "recipes": [
@@ -4891,5 +4892,5 @@ export const useRecipesStore = defineStore('recipeStore', () => {
         }
     }
 
-    return { randomRecipes, getMainRecipes }
+    return { randomRecipes, getMainRecipes, myRecipes }
 })
