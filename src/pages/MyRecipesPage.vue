@@ -1,5 +1,6 @@
 <script setup>
 import { useRecipesStore } from '@/stores/recipesStore';
+import { RouterLink } from 'vue-router';
 import RecipeCardPreview from '@/components/RecipeCardPreview.vue';
 
 const recipeStore = useRecipesStore();
@@ -13,13 +14,16 @@ const recipeStore = useRecipesStore();
             :title="i.title" :id="i.id" :img="i.image" :data="i" :myRecipe="true" />
         <div v-else class="text-center">
             <p>No Recipes Yet...</p>
-            <v-btn class="mt-4" elevation="0">add recipe</v-btn>
+            <RouterLink to="edit">
+                <v-btn class="mt-4" elevation="0" color="var(--beige-m)" prepend-icon="mdi-plus">add recipe</v-btn>
+            </RouterLink>
         </div>
     </div>
 </template>
 
 <style scoped lang="scss">
-h2 {
+h2,
+p {
     color: var(--brown);
 }
 </style>

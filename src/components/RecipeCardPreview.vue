@@ -13,7 +13,12 @@ const props = defineProps({
 
 <template>
     <v-card class="mx-4 pa-4 card mb-6">
-        <router-link :to="{ name: 'recipe', params: { id: id } }">
+        <router-link v-if="!myRecipe" :to="{ name: 'recipe', params: { id: id } }">
+            <div class="d-flex mb-2">
+                <img :src="img" :alt="title" class="mx-auto" />
+            </div>
+        </router-link>
+        <router-link v-else :to="{ name: 'myRecipes', params: { id: id } }">
             <div class="d-flex mb-2">
                 <img :src="img" :alt="title" class="mx-auto" />
             </div>
