@@ -1,19 +1,39 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import MainPage from '@/pages/MainPage.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import MainFeedPage from '@/pages/MainFeedPage.vue';
 
 const routes = [
-    { path: '/', component: MainPage },
+    {
+        path: '/',
+        component: MainFeedPage
+    },
     {
         name: 'recipe',
         path: '/recipe/:id',
-        component: () => import('/src/pages/RecipePage.vue'),
+        component: () => import('/src/pages/MainFeedDetailPage.vue'),
         props: {
             default: (route) => ({
                 id: route.params.id,
             }),
         },
     },
-    { path: '/edit', component: () => import('/src/pages/EditAddPage.vue') },
+    {
+        path: '/my-recipes',
+        component: () => import('../pages/MyRecipesPage.vue')
+    },
+    {
+        name: 'myRecipes',
+        path: '/my-recipes/:id',
+        component: () => import ('../pages/MyRecipesDetailPage.vue'),
+        props: {
+            default: (route) => ({
+                id: route.params.id,
+            })
+        },
+    },
+    {
+        path: '/edit',
+        component: () => import('/src/pages/EditAddPage.vue')
+    },
     {
         path: "/:patchMatch(.*)*",
         name: 'notFound',
@@ -29,4 +49,4 @@ const router = createRouter({
     }
 })
 
-export default router
+export default router;

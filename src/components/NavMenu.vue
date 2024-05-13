@@ -3,7 +3,7 @@ import { ref } from 'vue';
 
 let open = ref(false);
 const navTitles = ref([
-    { title: 'My Recipes', to: '/' },
+    { title: 'My Recipes', to: '/my-recipes' },
     { title: 'My Feed', to: '/' },
     { title: 'Edit', to: '/edit' },
 ]);

@@ -62,6 +62,7 @@ let readyInMinutes = ref(null);
 
 
 // Rules
+//TODO: move rules to another file like in maestro
 let valid = ref(false);
 const isNumber = (n) => n && n > 0 && /[\d]*$/.test(n) || 'must be a number';
 const isText = (text) => text && text.length > 4 && /^[^\d]*$/.test(text) || 'must be at least 4 characters long and no numbers';
@@ -71,13 +72,14 @@ const titleCorrect = () => (recipeTitle.value && recipeTitle.value.length > 4 &&
 
 function Save() {
     debugger;
-    recipeStore.myRecipes.value.push({
-        title: recipeTitle.value,
-        extendedIngredients: ingredients.value,
-        servings: servings.value,
-        readyInMinutes: readyInMinutes.value,
-        diets: selectedDiets.value,
-        analyzedInstructions: preperationSteps.value,
+    recipeStore.myRecipes.push({
+        // TODO: make this work
+        title: recipeTitle,
+        // extendedIngredients: ingredients.value,
+        // servings: servings.value,
+        // readyInMinutes: readyInMinutes.value,
+        // diets: selectedDiets.value,
+        // analyzedInstructions: preperationSteps.value,
     })
 }
 

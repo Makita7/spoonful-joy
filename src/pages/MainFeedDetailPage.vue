@@ -4,7 +4,6 @@ import LikeComponent from '@/components/LikeComponent.vue';
 import PreperationStep from '@/components/PreperationStep.vue';
 import { useRecipesStore } from '@/stores/recipesStore';
 import { useRoute } from 'vue-router';
-import ServingIcon from '@/assets/icon-people.svg'
 
 const recipeStore = useRecipesStore();
 const route = useRoute();
@@ -13,9 +12,9 @@ const recipe = ref([]);
 onMounted(() => {
     recipeStore.getMainRecipes()
         .then(data => {
-            recipe.value = data.recipes.filter(i => i.id == route.params.id)[0]
+            recipe.value = data.recipes.filter(i => i.id == route.params.id)[0];
         })
-})
+});
 
 </script>
 

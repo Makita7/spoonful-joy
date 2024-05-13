@@ -6,7 +6,8 @@ const props = defineProps({
     img: String,
     id: Number,
     data: Object,
-})
+    myRecipe: Boolean,
+});
 
 </script>
 
@@ -18,7 +19,10 @@ const props = defineProps({
             </div>
         </router-link>
         <div class="d-flex align-center">
-            <router-link :to="{ name: 'recipe', params: { id: id } }">
+            <router-link v-if="!myRecipe" :to="{ name: 'recipe', params: { id: id } }">
+                <h3>{{ title }}</h3>
+            </router-link>
+            <router-link v-else :to="{ name: 'myRecipes', params: { id: id } }">
                 <h3>{{ title }}</h3>
             </router-link>
             <v-spacer />
