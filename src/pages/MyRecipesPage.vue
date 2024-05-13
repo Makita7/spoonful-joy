@@ -7,10 +7,9 @@ const recipeStore = useRecipesStore();
 </script>
 
 <template>
-    <div>
+    <div class="pb-8">
         <h2 class="text-center mb-2">My Recipes</h2>
-        {{ recipeStore.myRecipe }}
-        <RecipeCardPreview v-if="recipeStore.myRecipes > 0" v-for="i in recipeStore.myRecipes" :key="i.id"
+        <RecipeCardPreview v-if="recipeStore.myRecipes.length > 0" v-for="i in recipeStore.myRecipes" :key="i.id"
             :title="i.title" :id="i.id" :img="i.image" :data="i" :myRecipe="true" />
         <div v-else class="text-center">
             <p>No Recipes Yet...</p>
