@@ -4,7 +4,7 @@ import MainFeedPage from '@/pages/MainFeedPage.vue';
 const routes = [
     {
         path: '/',
-        component: MainFeedPage
+        component: MainFeedPage,
     },
     {
         name: 'recipe',
@@ -18,7 +18,7 @@ const routes = [
     },
     {
         path: '/my-recipes',
-        component: () => import('../pages/MyRecipesPage.vue')
+        component: () => import('../pages/MyRecipesPage.vue'),
     },
     {
         name: 'myRecipes',
@@ -32,7 +32,7 @@ const routes = [
     },
     {
         path: '/edit',
-        component: () => import('/src/pages/EditAddPage.vue')
+        component: () => import('/src/pages/EditAddPage.vue'),
     },
     {
         path: "/:patchMatch(.*)*",
