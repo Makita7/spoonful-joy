@@ -22,7 +22,6 @@ onMounted(() => {
 })
 
 watch(() => props.id, async () => {
-    console.log(props, 'watcher')
     isLiked.value = favStore.checkFavs(props.id);
 })
 

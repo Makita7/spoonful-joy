@@ -16,14 +16,12 @@ export const useFavoritesStore = defineStore('favorites', () => {
                 const index = favs.value.findIndex(i => i.id === idDish);
                 favs.value.splice(index, 1);
             }
-            console.log('if', favs)
         }else{
             favs.value.push({
                 id: idDish,
                 dishName: title,
                 like: true
             })
-            console.log('else push', favs.value)
         }
         if(favs.value === undefined){
             favs.value = []

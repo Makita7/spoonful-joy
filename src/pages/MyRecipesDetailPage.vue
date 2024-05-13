@@ -1,7 +1,4 @@
 <script setup>
-import { useRecipesStore } from '@/stores/recipesStore';
-
-const recipeStore = useRecipesStore();
 
 </script>
 
