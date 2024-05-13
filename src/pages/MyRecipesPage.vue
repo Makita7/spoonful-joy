@@ -8,11 +8,12 @@ const recipeStore = useRecipesStore();
 
 <template>
     <h2 class="text-center mb-2">My Recipes</h2>
-    <RecipeCardPreview v-for="i in recipeStore.myRecipes" :key="i.id" :title="i.title" :id="i.id" :img="i.image"
-        :data="i" />
-    <div v-if="!recipeStore.myRecipes">
-        <p>No Recipes yet</p>
-        <v-btn>add recipe</v-btn>
+    {{ recipeStore.myRecipe }}
+    <RecipeCardPreview v-if="recipeStore.myRecipes > 0" v-for="i in recipeStore.myRecipes" :key="i.id" :title="i.title"
+        :id="i.id" :img="i.image" :data="i" :myRecipe="true" />
+    <div v-else class="text-center">
+        <p>No Recipes Yet...</p>
+        <v-btn class="mt-4">add recipe</v-btn>
     </div>
 </template>
 

@@ -15,7 +15,8 @@ onMounted(() => {
 <template>
     <div class="pb-8">
         <h2 class="text-center mb-2">My Feed</h2>
-        <RecipeCardPreview v-for="i in data.recipes" :key="i.id" :title="i.title" :id="i.id" :img="i.image" :data="i" />
+        <RecipeCardPreview v-for="i in data.recipes" :key="i.id" :title="i.title" :id="i.id" :img="i.image" :data="i"
+            :myRecipe="false" />
     </div>
 </template>
 

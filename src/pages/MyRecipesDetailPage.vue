@@ -1,6 +1,5 @@
 <script setup>
 import { useRecipesStore } from '@/stores/recipesStore';
-import RecipeCardPreview from '@/components/RecipeCardPreview.vue';
 
 const recipeStore = useRecipesStore();
 
