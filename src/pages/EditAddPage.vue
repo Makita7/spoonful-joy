@@ -71,16 +71,8 @@ const notNull = (text) => !text ? 'must select an option' : null;
 const titleCorrect = () => (recipeTitle.value && recipeTitle.value.length > 4 && /^[^\d]*$/.test(recipeTitle.value)) ? true : false;
 
 function Save() {
-    debugger;
-    recipeStore.myRecipes.push({
-        // TODO: make this work
-        title: recipeTitle,
-        // extendedIngredients: ingredients.value,
-        // servings: servings.value,
-        // readyInMinutes: readyInMinutes.value,
-        // diets: selectedDiets.value,
-        // analyzedInstructions: preperationSteps.value,
-    })
+    recipeStore.AddMyRecipe(recipeTitle.value, ingredients.value, servings.value, readyInMinutes.value, selectedDiets.value, preperationSteps.value);
+    // console.log(recipeTitle.value, ingredients.value, servings.value, readyInMinutes.value, selectedDiets.value, preperationSteps.value)
 }
 
 </script>
@@ -88,8 +80,7 @@ function Save() {
 <template>
     <v-card class="editRecipePage pa-4 pb-8">
         <v-form @submit.prevent v-model="valid">
-
-
+            {{ recipeStore.myRecipes }}
             <h3 v-if="recipeTitle && !editTitle" @click="editTitle = true">{{ recipeTitle }}</h3>
             <div class="d-flex align-center" v-if="!recipeTitle || editTitle">
                 <v-text-field label="Recipe Title" v-model="recipeTitle" @keydown.enter="setTitle()" :rules="[isText]"

@@ -51,7 +51,7 @@ onMounted(() => {
                 </ul>
             </div>
             <h4 class="pb-2">Preparation</h4>
-            <PreperationStep v-if="recipe.analyzedInstructions" v-for="step in recipe.analyzedInstructions[0].steps"
+            <PreperationStep v-if="recipe.analyzedInstructions" v-for="step in recipe.analyzedInstructions"
                 :key="step.number" :n="step.number" :description='step.step' />
             <img :src="recipe.image" :alt="recipe.title" class="mt-4 mb-4" />
 
@@ -64,6 +64,7 @@ onMounted(() => {
 <style scoped lang="scss">
 .recipePage {
     border-radius: 3rem 3rem 0 0;
+    min-height: 80vh;
 
     h3 {
         font-size: 2.2rem;

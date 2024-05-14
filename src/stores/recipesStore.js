@@ -4878,672 +4878,672 @@ export const useRecipesStore = defineStore('recipeStore', () => {
         ]
     }
 
-    myRecipes.value = [
-        {
-        "vegetarian": true,
-        "vegan": false,
-        "glutenFree": true,
-        "dairyFree": false,
-        "veryHealthy": false,
-        "cheap": false,
-        "veryPopular": false,
-        "sustainable": false,
-        "lowFodmap": false,
-        "weightWatcherSmartPoints": 14,
-        "gaps": "no",
-        "preparationMinutes": -1,
-        "cookingMinutes": -1,
-        "aggregateLikes": 3,
-        "healthScore": 1,
-        "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
-        "license": "CC BY 3.0",
-        "sourceName": "Foodista",
-        "pricePerServing": 125.13,
-        "extendedIngredients": [
-            {
-                "id": 1145,
-                "aisle": "Milk, Eggs, Other Dairy",
-                "image": "butter-sliced.jpg",
-                "consistency": "SOLID",
-                "name": "butter",
-                "nameClean": "unsalted butter",
-                "original": "8 tablespoons (1 stick) unsalted butter melted",
-                "originalName": "(1 stick) unsalted butter melted",
-                "amount": 8.0,
-                "unit": "tablespoons",
-                "meta": [
-                    "unsalted",
-                    "melted",
-                    "(1 stick)"
-                ],
-                "measures": {
-                    "us": {
-                        "amount": 8.0,
-                        "unitShort": "Tbsps",
-                        "unitLong": "Tbsps"
-                    },
-                    "metric": {
-                        "amount": 8.0,
-                        "unitShort": "Tbsps",
-                        "unitLong": "Tbsps"
-                    }
-                }
-            },
-            {
-                "id": 11215,
-                "aisle": "Produce",
-                "image": "garlic.png",
-                "consistency": "SOLID",
-                "name": "garlic",
-                "nameClean": "garlic",
-                "original": "1 clove garlic crushed with a little salt",
-                "originalName": "garlic crushed with a little salt",
-                "amount": 1.0,
-                "unit": "clove",
-                "meta": [
-                    "with a little salt",
-                    "crushed"
-                ],
-                "measures": {
-                    "us": {
-                        "amount": 1.0,
-                        "unitShort": "clove",
-                        "unitLong": "clove"
-                    },
-                    "metric": {
-                        "amount": 1.0,
-                        "unitShort": "clove",
-                        "unitLong": "clove"
-                    }
-                }
-            },
-            {
-                "id": 19296,
-                "aisle": "Nut butters, Jams, and Honey",
-                "image": "honey.png",
-                "consistency": "LIQUID",
-                "name": "honey",
-                "nameClean": "honey",
-                "original": "1 tablespoon honey",
-                "originalName": "honey",
-                "amount": 1.0,
-                "unit": "tablespoon",
-                "meta": [],
-                "measures": {
-                    "us": {
-                        "amount": 1.0,
-                        "unitShort": "Tbsp",
-                        "unitLong": "Tbsp"
-                    },
-                    "metric": {
-                        "amount": 1.0,
-                        "unitShort": "Tbsp",
-                        "unitLong": "Tbsp"
-                    }
-                }
-            },
-            {
-                "id": 2009,
-                "aisle": "Spices and Seasonings",
-                "image": "chili-powder.jpg",
-                "consistency": "SOLID",
-                "name": "chilli powder",
-                "nameClean": "chili powder",
-                "original": "1 teaspoon chilli powder",
-                "originalName": "chilli powder",
-                "amount": 1.0,
-                "unit": "teaspoon",
-                "meta": [],
-                "measures": {
-                    "us": {
-                        "amount": 1.0,
-                        "unitShort": "tsp",
-                        "unitLong": "teaspoon"
-                    },
-                    "metric": {
-                        "amount": 1.0,
-                        "unitShort": "tsp",
-                        "unitLong": "teaspoon"
-                    }
-                }
-            },
-            {
-                "id": 1012014,
-                "aisle": "Spices and Seasonings",
-                "image": "ground-cumin.jpg",
-                "consistency": "SOLID",
-                "name": "ground cumin",
-                "nameClean": "ground cumin",
-                "original": "1 teaspoon ground cumin",
-                "originalName": "ground cumin",
-                "amount": 1.0,
-                "unit": "teaspoon",
-                "meta": [],
-                "measures": {
-                    "us": {
-                        "amount": 1.0,
-                        "unitShort": "tsp",
-                        "unitLong": "teaspoon"
-                    },
-                    "metric": {
-                        "amount": 1.0,
-                        "unitShort": "tsp",
-                        "unitLong": "teaspoon"
-                    }
-                }
-            },
-            {
-                "id": 1002013,
-                "aisle": "Spices and Seasonings",
-                "image": "ground-coriander.jpg",
-                "consistency": "SOLID",
-                "name": "ground coriander",
-                "nameClean": "ground coriander",
-                "original": "1 teaspoon ground coriander",
-                "originalName": "ground coriander",
-                "amount": 1.0,
-                "unit": "teaspoon",
-                "meta": [],
-                "measures": {
-                    "us": {
-                        "amount": 1.0,
-                        "unitShort": "tsp",
-                        "unitLong": "teaspoon"
-                    },
-                    "metric": {
-                        "amount": 1.0,
-                        "unitShort": "tsp",
-                        "unitLong": "teaspoon"
-                    }
-                }
-            },
-            {
-                "id": 1002030,
-                "aisle": "Spices and Seasonings",
-                "image": "pepper.jpg",
-                "consistency": "SOLID",
-                "name": "ground pepper",
-                "nameClean": "black pepper",
-                "original": "1 teaspoon ground black pepper",
-                "originalName": "ground black pepper",
-                "amount": 1.0,
-                "unit": "teaspoon",
-                "meta": [
-                    "black"
-                ],
-                "measures": {
-                    "us": {
-                        "amount": 1.0,
-                        "unitShort": "tsp",
-                        "unitLong": "teaspoon"
-                    },
-                    "metric": {
-                        "amount": 1.0,
-                        "unitShort": "tsp",
-                        "unitLong": "teaspoon"
-                    }
-                }
-            },
-            {
-                "id": 11167,
-                "aisle": "Produce",
-                "image": "corn-on-the-cob.jpg",
-                "consistency": "SOLID",
-                "name": "corn cobs",
-                "nameClean": "corn on the cob",
-                "original": "4 corn cobs, husks removed",
-                "originalName": "corn cobs, husks removed",
-                "amount": 4.0,
-                "unit": "",
-                "meta": [],
-                "measures": {
-                    "us": {
-                        "amount": 4.0,
-                        "unitShort": "",
-                        "unitLong": ""
-                    },
-                    "metric": {
-                        "amount": 4.0,
-                        "unitShort": "",
-                        "unitLong": ""
-                    }
-                }
-            }
-        ],
-        "id": 634300,
-        "title": "Barbecued Corn on the Cob With Spiced Butter",
-        "readyInMinutes": 45,
-        "servings": 4,
-        "sourceUrl": "https://www.foodista.com/recipe/BNKJW2JQ/barbecued-corn-on-the-cob-with-spiced-butter",
-        "image": "https://img.spoonacular.com/recipes/634300-556x370.jpg",
-        "imageType": "jpg",
-        "summary": "Barbecued Corn on the Cob With Spiced Butter takes roughly <b>45 minutes</b> from beginning to end. This recipe makes 4 servings with <b>301 calories</b>, <b>4g of protein</b>, and <b>24g of fat</b> each. For <b>$1.25 per serving</b>, this recipe <b>covers 6%</b> of your daily requirements of vitamins and minerals. It works well as a side dish. Head to the store and pick up ground cumin, garlic, honey, and a few other things to make it today. It is a <b>reasonably priced</b> recipe for fans of American food. Not a lot of people made this recipe, and 3 would say it hit the spot. It is a good option if you're following a <b>gluten free and lacto ovo vegetarian</b> diet. It is brought to you by Foodista. Taking all factors into account, this recipe <b>earns a spoonacular score of 21%</b>, which is rather bad. <a href=\"https://spoonacular.com/recipes/barbecued-corn-on-the-cob-with-bacon-and-chili-butter-148077\">Barbecued Corn on the Cob with Bacon and Chili Butter</a>, <a href=\"https://spoonacular.com/recipes/curry-butter-corn-on-the-cob-798344\">Curry Butter Corn on the Cob</a>, and <a href=\"https://spoonacular.com/recipes/corn-on-the-cob-with-smoked-butter-338713\">Corn on the Cob with Smoked Butter</a> are very similar to this recipe.",
-        "cuisines": [
-            "American"
-        ],
-        "dishTypes": [
-            "side dish"
-        ],
-        "diets": [
-            "gluten free",
-            "lacto ovo vegetarian"
-        ],
-        "occasions": [],
-        "instructions": "Combine the butter, garlic, honey, and spices in a small saucepan and cook over a gentle heat.\nBrush corn with the flavored butter and cook on the barbecue or under the grill turning regularly until golden.\nBaste continually during the cooking process.",
-        "analyzedInstructions": [
-            {
-                "name": "",
-                "steps": [
-                    {
-                        "number": 1,
-                        "step": "Combine the butter, garlic, honey, and spices in a small saucepan and cook over a gentle heat.",
-                        "ingredients": [
-                            {
-                                "id": 1001,
-                                "name": "butter",
-                                "localizedName": "butter",
-                                "image": "https://spoonacular.com/cdn/ingredients_100x100/butter-sliced.jpg"
-                            },
-                            {
-                                "id": 11215,
-                                "name": "garlic",
-                                "localizedName": "garlic",
-                                "image": "https://spoonacular.com/cdn/ingredients_100x100/garlic.png"
-                            },
-                            {
-                                "id": 2035,
-                                "name": "spices",
-                                "localizedName": "spices",
-                                "image": "https://spoonacular.com/cdn/ingredients_100x100/spices.png"
-                            },
-                            {
-                                "id": 19296,
-                                "name": "honey",
-                                "localizedName": "honey",
-                                "image": "https://spoonacular.com/cdn/ingredients_100x100/honey.png"
-                            }
-                        ],
-                        "equipment": [
-                            {
-                                "id": 404669,
-                                "name": "sauce pan",
-                                "localizedName": "sauce pan",
-                                "image": "https://spoonacular.com/cdn/equipment_100x100/sauce-pan.jpg"
-                            }
-                        ]
-                    },
-                    {
-                        "number": 2,
-                        "step": "Brush corn with the flavored butter and cook on the barbecue or under the grill turning regularly until golden.",
-                        "ingredients": [
-                            {
-                                "id": 1021001,
-                                "name": "flavored butter",
-                                "localizedName": "flavored butter",
-                                "image": "https://spoonacular.com/cdn/ingredients_100x100/butter-sliced.jpg"
-                            },
-                            {
-                                "id": 11168,
-                                "name": "corn",
-                                "localizedName": "corn",
-                                "image": "https://spoonacular.com/cdn/ingredients_100x100/corn.png"
-                            }
-                        ],
-                        "equipment": [
-                            {
-                                "id": 404706,
-                                "name": "grill",
-                                "localizedName": "grill",
-                                "image": "https://spoonacular.com/cdn/equipment_100x100/grill.jpg"
-                            }
-                        ]
-                    },
-                    {
-                        "number": 3,
-                        "step": "Baste continually during the cooking process.",
-                        "ingredients": [],
-                        "equipment": []
-                    }
-                ]
-            }
-        ],
-        "originalId": null,
-        "spoonacularScore": 28.163227081298828,
-        "spoonacularSourceUrl": "https://spoonacular.com/barbecued-corn-on-the-cob-with-spiced-butter-634300"
-        },
-        {
-        "vegetarian": true,
-        "vegan": false,
-        "glutenFree": true,
-        "dairyFree": false,
-        "veryHealthy": false,
-        "cheap": false,
-        "veryPopular": false,
-        "sustainable": false,
-        "lowFodmap": false,
-        "weightWatcherSmartPoints": 14,
-        "gaps": "no",
-        "preparationMinutes": -1,
-        "cookingMinutes": -1,
-        "aggregateLikes": 3,
-        "healthScore": 1,
-        "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
-        "license": "CC BY 3.0",
-        "sourceName": "Foodista",
-        "pricePerServing": 125.13,
-        "extendedIngredients": [
-            {
-                "id": 1145,
-                "aisle": "Milk, Eggs, Other Dairy",
-                "image": "butter-sliced.jpg",
-                "consistency": "SOLID",
-                "name": "butter",
-                "nameClean": "unsalted butter",
-                "original": "8 tablespoons (1 stick) unsalted butter melted",
-                "originalName": "(1 stick) unsalted butter melted",
-                "amount": 8.0,
-                "unit": "tablespoons",
-                "meta": [
-                    "unsalted",
-                    "melted",
-                    "(1 stick)"
-                ],
-                "measures": {
-                    "us": {
-                        "amount": 8.0,
-                        "unitShort": "Tbsps",
-                        "unitLong": "Tbsps"
-                    },
-                    "metric": {
-                        "amount": 8.0,
-                        "unitShort": "Tbsps",
-                        "unitLong": "Tbsps"
-                    }
-                }
-            },
-            {
-                "id": 11215,
-                "aisle": "Produce",
-                "image": "garlic.png",
-                "consistency": "SOLID",
-                "name": "garlic",
-                "nameClean": "garlic",
-                "original": "1 clove garlic crushed with a little salt",
-                "originalName": "garlic crushed with a little salt",
-                "amount": 1.0,
-                "unit": "clove",
-                "meta": [
-                    "with a little salt",
-                    "crushed"
-                ],
-                "measures": {
-                    "us": {
-                        "amount": 1.0,
-                        "unitShort": "clove",
-                        "unitLong": "clove"
-                    },
-                    "metric": {
-                        "amount": 1.0,
-                        "unitShort": "clove",
-                        "unitLong": "clove"
-                    }
-                }
-            },
-            {
-                "id": 19296,
-                "aisle": "Nut butters, Jams, and Honey",
-                "image": "honey.png",
-                "consistency": "LIQUID",
-                "name": "honey",
-                "nameClean": "honey",
-                "original": "1 tablespoon honey",
-                "originalName": "honey",
-                "amount": 1.0,
-                "unit": "tablespoon",
-                "meta": [],
-                "measures": {
-                    "us": {
-                        "amount": 1.0,
-                        "unitShort": "Tbsp",
-                        "unitLong": "Tbsp"
-                    },
-                    "metric": {
-                        "amount": 1.0,
-                        "unitShort": "Tbsp",
-                        "unitLong": "Tbsp"
-                    }
-                }
-            },
-            {
-                "id": 2009,
-                "aisle": "Spices and Seasonings",
-                "image": "chili-powder.jpg",
-                "consistency": "SOLID",
-                "name": "chilli powder",
-                "nameClean": "chili powder",
-                "original": "1 teaspoon chilli powder",
-                "originalName": "chilli powder",
-                "amount": 1.0,
-                "unit": "teaspoon",
-                "meta": [],
-                "measures": {
-                    "us": {
-                        "amount": 1.0,
-                        "unitShort": "tsp",
-                        "unitLong": "teaspoon"
-                    },
-                    "metric": {
-                        "amount": 1.0,
-                        "unitShort": "tsp",
-                        "unitLong": "teaspoon"
-                    }
-                }
-            },
-            {
-                "id": 1012014,
-                "aisle": "Spices and Seasonings",
-                "image": "ground-cumin.jpg",
-                "consistency": "SOLID",
-                "name": "ground cumin",
-                "nameClean": "ground cumin",
-                "original": "1 teaspoon ground cumin",
-                "originalName": "ground cumin",
-                "amount": 1.0,
-                "unit": "teaspoon",
-                "meta": [],
-                "measures": {
-                    "us": {
-                        "amount": 1.0,
-                        "unitShort": "tsp",
-                        "unitLong": "teaspoon"
-                    },
-                    "metric": {
-                        "amount": 1.0,
-                        "unitShort": "tsp",
-                        "unitLong": "teaspoon"
-                    }
-                }
-            },
-            {
-                "id": 1002013,
-                "aisle": "Spices and Seasonings",
-                "image": "ground-coriander.jpg",
-                "consistency": "SOLID",
-                "name": "ground coriander",
-                "nameClean": "ground coriander",
-                "original": "1 teaspoon ground coriander",
-                "originalName": "ground coriander",
-                "amount": 1.0,
-                "unit": "teaspoon",
-                "meta": [],
-                "measures": {
-                    "us": {
-                        "amount": 1.0,
-                        "unitShort": "tsp",
-                        "unitLong": "teaspoon"
-                    },
-                    "metric": {
-                        "amount": 1.0,
-                        "unitShort": "tsp",
-                        "unitLong": "teaspoon"
-                    }
-                }
-            },
-            {
-                "id": 1002030,
-                "aisle": "Spices and Seasonings",
-                "image": "pepper.jpg",
-                "consistency": "SOLID",
-                "name": "ground pepper",
-                "nameClean": "black pepper",
-                "original": "1 teaspoon ground black pepper",
-                "originalName": "ground black pepper",
-                "amount": 1.0,
-                "unit": "teaspoon",
-                "meta": [
-                    "black"
-                ],
-                "measures": {
-                    "us": {
-                        "amount": 1.0,
-                        "unitShort": "tsp",
-                        "unitLong": "teaspoon"
-                    },
-                    "metric": {
-                        "amount": 1.0,
-                        "unitShort": "tsp",
-                        "unitLong": "teaspoon"
-                    }
-                }
-            },
-            {
-                "id": 11167,
-                "aisle": "Produce",
-                "image": "corn-on-the-cob.jpg",
-                "consistency": "SOLID",
-                "name": "corn cobs",
-                "nameClean": "corn on the cob",
-                "original": "4 corn cobs, husks removed",
-                "originalName": "corn cobs, husks removed",
-                "amount": 4.0,
-                "unit": "",
-                "meta": [],
-                "measures": {
-                    "us": {
-                        "amount": 4.0,
-                        "unitShort": "",
-                        "unitLong": ""
-                    },
-                    "metric": {
-                        "amount": 4.0,
-                        "unitShort": "",
-                        "unitLong": ""
-                    }
-                }
-            }
-        ],
-        "id": 634300,
-        "title": "Barbecued Corn on the Cob With Spiced Butter",
-        "readyInMinutes": 45,
-        "servings": 4,
-        "sourceUrl": "https://www.foodista.com/recipe/BNKJW2JQ/barbecued-corn-on-the-cob-with-spiced-butter",
-        "image": "https://img.spoonacular.com/recipes/634300-556x370.jpg",
-        "imageType": "jpg",
-        "summary": "Barbecued Corn on the Cob With Spiced Butter takes roughly <b>45 minutes</b> from beginning to end. This recipe makes 4 servings with <b>301 calories</b>, <b>4g of protein</b>, and <b>24g of fat</b> each. For <b>$1.25 per serving</b>, this recipe <b>covers 6%</b> of your daily requirements of vitamins and minerals. It works well as a side dish. Head to the store and pick up ground cumin, garlic, honey, and a few other things to make it today. It is a <b>reasonably priced</b> recipe for fans of American food. Not a lot of people made this recipe, and 3 would say it hit the spot. It is a good option if you're following a <b>gluten free and lacto ovo vegetarian</b> diet. It is brought to you by Foodista. Taking all factors into account, this recipe <b>earns a spoonacular score of 21%</b>, which is rather bad. <a href=\"https://spoonacular.com/recipes/barbecued-corn-on-the-cob-with-bacon-and-chili-butter-148077\">Barbecued Corn on the Cob with Bacon and Chili Butter</a>, <a href=\"https://spoonacular.com/recipes/curry-butter-corn-on-the-cob-798344\">Curry Butter Corn on the Cob</a>, and <a href=\"https://spoonacular.com/recipes/corn-on-the-cob-with-smoked-butter-338713\">Corn on the Cob with Smoked Butter</a> are very similar to this recipe.",
-        "cuisines": [
-            "American"
-        ],
-        "dishTypes": [
-            "side dish"
-        ],
-        "diets": [
-            "gluten free",
-            "lacto ovo vegetarian"
-        ],
-        "occasions": [],
-        "instructions": "Combine the butter, garlic, honey, and spices in a small saucepan and cook over a gentle heat.\nBrush corn with the flavored butter and cook on the barbecue or under the grill turning regularly until golden.\nBaste continually during the cooking process.",
-        "analyzedInstructions": [
-            {
-                "name": "",
-                "steps": [
-                    {
-                        "number": 1,
-                        "step": "Combine the butter, garlic, honey, and spices in a small saucepan and cook over a gentle heat.",
-                        "ingredients": [
-                            {
-                                "id": 1001,
-                                "name": "butter",
-                                "localizedName": "butter",
-                                "image": "https://spoonacular.com/cdn/ingredients_100x100/butter-sliced.jpg"
-                            },
-                            {
-                                "id": 11215,
-                                "name": "garlic",
-                                "localizedName": "garlic",
-                                "image": "https://spoonacular.com/cdn/ingredients_100x100/garlic.png"
-                            },
-                            {
-                                "id": 2035,
-                                "name": "spices",
-                                "localizedName": "spices",
-                                "image": "https://spoonacular.com/cdn/ingredients_100x100/spices.png"
-                            },
-                            {
-                                "id": 19296,
-                                "name": "honey",
-                                "localizedName": "honey",
-                                "image": "https://spoonacular.com/cdn/ingredients_100x100/honey.png"
-                            }
-                        ],
-                        "equipment": [
-                            {
-                                "id": 404669,
-                                "name": "sauce pan",
-                                "localizedName": "sauce pan",
-                                "image": "https://spoonacular.com/cdn/equipment_100x100/sauce-pan.jpg"
-                            }
-                        ]
-                    },
-                    {
-                        "number": 2,
-                        "step": "Brush corn with the flavored butter and cook on the barbecue or under the grill turning regularly until golden.",
-                        "ingredients": [
-                            {
-                                "id": 1021001,
-                                "name": "flavored butter",
-                                "localizedName": "flavored butter",
-                                "image": "https://spoonacular.com/cdn/ingredients_100x100/butter-sliced.jpg"
-                            },
-                            {
-                                "id": 11168,
-                                "name": "corn",
-                                "localizedName": "corn",
-                                "image": "https://spoonacular.com/cdn/ingredients_100x100/corn.png"
-                            }
-                        ],
-                        "equipment": [
-                            {
-                                "id": 404706,
-                                "name": "grill",
-                                "localizedName": "grill",
-                                "image": "https://spoonacular.com/cdn/equipment_100x100/grill.jpg"
-                            }
-                        ]
-                    },
-                    {
-                        "number": 3,
-                        "step": "Baste continually during the cooking process.",
-                        "ingredients": [],
-                        "equipment": []
-                    }
-                ]
-            }
-        ],
-        "originalId": null,
-        "spoonacularScore": 28.163227081298828,
-        "spoonacularSourceUrl": "https://spoonacular.com/barbecued-corn-on-the-cob-with-spiced-butter-634300"
-        },
-    ];
+    // myRecipes.value = [
+    //     {
+    //     "vegetarian": true,
+    //     "vegan": false,
+    //     "glutenFree": true,
+    //     "dairyFree": false,
+    //     "veryHealthy": false,
+    //     "cheap": false,
+    //     "veryPopular": false,
+    //     "sustainable": false,
+    //     "lowFodmap": false,
+    //     "weightWatcherSmartPoints": 14,
+    //     "gaps": "no",
+    //     "preparationMinutes": -1,
+    //     "cookingMinutes": -1,
+    //     "aggregateLikes": 3,
+    //     "healthScore": 1,
+    //     "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+    //     "license": "CC BY 3.0",
+    //     "sourceName": "Foodista",
+    //     "pricePerServing": 125.13,
+    //     "extendedIngredients": [
+    //         {
+    //             "id": 1145,
+    //             "aisle": "Milk, Eggs, Other Dairy",
+    //             "image": "butter-sliced.jpg",
+    //             "consistency": "SOLID",
+    //             "name": "butter",
+    //             "nameClean": "unsalted butter",
+    //             "original": "8 tablespoons (1 stick) unsalted butter melted",
+    //             "originalName": "(1 stick) unsalted butter melted",
+    //             "amount": 8.0,
+    //             "unit": "tablespoons",
+    //             "meta": [
+    //                 "unsalted",
+    //                 "melted",
+    //                 "(1 stick)"
+    //             ],
+    //             "measures": {
+    //                 "us": {
+    //                     "amount": 8.0,
+    //                     "unitShort": "Tbsps",
+    //                     "unitLong": "Tbsps"
+    //                 },
+    //                 "metric": {
+    //                     "amount": 8.0,
+    //                     "unitShort": "Tbsps",
+    //                     "unitLong": "Tbsps"
+    //                 }
+    //             }
+    //         },
+    //         {
+    //             "id": 11215,
+    //             "aisle": "Produce",
+    //             "image": "garlic.png",
+    //             "consistency": "SOLID",
+    //             "name": "garlic",
+    //             "nameClean": "garlic",
+    //             "original": "1 clove garlic crushed with a little salt",
+    //             "originalName": "garlic crushed with a little salt",
+    //             "amount": 1.0,
+    //             "unit": "clove",
+    //             "meta": [
+    //                 "with a little salt",
+    //                 "crushed"
+    //             ],
+    //             "measures": {
+    //                 "us": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "clove",
+    //                     "unitLong": "clove"
+    //                 },
+    //                 "metric": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "clove",
+    //                     "unitLong": "clove"
+    //                 }
+    //             }
+    //         },
+    //         {
+    //             "id": 19296,
+    //             "aisle": "Nut butters, Jams, and Honey",
+    //             "image": "honey.png",
+    //             "consistency": "LIQUID",
+    //             "name": "honey",
+    //             "nameClean": "honey",
+    //             "original": "1 tablespoon honey",
+    //             "originalName": "honey",
+    //             "amount": 1.0,
+    //             "unit": "tablespoon",
+    //             "meta": [],
+    //             "measures": {
+    //                 "us": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "Tbsp",
+    //                     "unitLong": "Tbsp"
+    //                 },
+    //                 "metric": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "Tbsp",
+    //                     "unitLong": "Tbsp"
+    //                 }
+    //             }
+    //         },
+    //         {
+    //             "id": 2009,
+    //             "aisle": "Spices and Seasonings",
+    //             "image": "chili-powder.jpg",
+    //             "consistency": "SOLID",
+    //             "name": "chilli powder",
+    //             "nameClean": "chili powder",
+    //             "original": "1 teaspoon chilli powder",
+    //             "originalName": "chilli powder",
+    //             "amount": 1.0,
+    //             "unit": "teaspoon",
+    //             "meta": [],
+    //             "measures": {
+    //                 "us": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "tsp",
+    //                     "unitLong": "teaspoon"
+    //                 },
+    //                 "metric": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "tsp",
+    //                     "unitLong": "teaspoon"
+    //                 }
+    //             }
+    //         },
+    //         {
+    //             "id": 1012014,
+    //             "aisle": "Spices and Seasonings",
+    //             "image": "ground-cumin.jpg",
+    //             "consistency": "SOLID",
+    //             "name": "ground cumin",
+    //             "nameClean": "ground cumin",
+    //             "original": "1 teaspoon ground cumin",
+    //             "originalName": "ground cumin",
+    //             "amount": 1.0,
+    //             "unit": "teaspoon",
+    //             "meta": [],
+    //             "measures": {
+    //                 "us": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "tsp",
+    //                     "unitLong": "teaspoon"
+    //                 },
+    //                 "metric": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "tsp",
+    //                     "unitLong": "teaspoon"
+    //                 }
+    //             }
+    //         },
+    //         {
+    //             "id": 1002013,
+    //             "aisle": "Spices and Seasonings",
+    //             "image": "ground-coriander.jpg",
+    //             "consistency": "SOLID",
+    //             "name": "ground coriander",
+    //             "nameClean": "ground coriander",
+    //             "original": "1 teaspoon ground coriander",
+    //             "originalName": "ground coriander",
+    //             "amount": 1.0,
+    //             "unit": "teaspoon",
+    //             "meta": [],
+    //             "measures": {
+    //                 "us": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "tsp",
+    //                     "unitLong": "teaspoon"
+    //                 },
+    //                 "metric": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "tsp",
+    //                     "unitLong": "teaspoon"
+    //                 }
+    //             }
+    //         },
+    //         {
+    //             "id": 1002030,
+    //             "aisle": "Spices and Seasonings",
+    //             "image": "pepper.jpg",
+    //             "consistency": "SOLID",
+    //             "name": "ground pepper",
+    //             "nameClean": "black pepper",
+    //             "original": "1 teaspoon ground black pepper",
+    //             "originalName": "ground black pepper",
+    //             "amount": 1.0,
+    //             "unit": "teaspoon",
+    //             "meta": [
+    //                 "black"
+    //             ],
+    //             "measures": {
+    //                 "us": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "tsp",
+    //                     "unitLong": "teaspoon"
+    //                 },
+    //                 "metric": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "tsp",
+    //                     "unitLong": "teaspoon"
+    //                 }
+    //             }
+    //         },
+    //         {
+    //             "id": 11167,
+    //             "aisle": "Produce",
+    //             "image": "corn-on-the-cob.jpg",
+    //             "consistency": "SOLID",
+    //             "name": "corn cobs",
+    //             "nameClean": "corn on the cob",
+    //             "original": "4 corn cobs, husks removed",
+    //             "originalName": "corn cobs, husks removed",
+    //             "amount": 4.0,
+    //             "unit": "",
+    //             "meta": [],
+    //             "measures": {
+    //                 "us": {
+    //                     "amount": 4.0,
+    //                     "unitShort": "",
+    //                     "unitLong": ""
+    //                 },
+    //                 "metric": {
+    //                     "amount": 4.0,
+    //                     "unitShort": "",
+    //                     "unitLong": ""
+    //                 }
+    //             }
+    //         }
+    //     ],
+    //     "id": 634300,
+    //     "title": "Barbecued Corn on the Cob With Spiced Butter",
+    //     "readyInMinutes": 45,
+    //     "servings": 4,
+    //     "sourceUrl": "https://www.foodista.com/recipe/BNKJW2JQ/barbecued-corn-on-the-cob-with-spiced-butter",
+    //     "image": "https://img.spoonacular.com/recipes/634300-556x370.jpg",
+    //     "imageType": "jpg",
+    //     "summary": "Barbecued Corn on the Cob With Spiced Butter takes roughly <b>45 minutes</b> from beginning to end. This recipe makes 4 servings with <b>301 calories</b>, <b>4g of protein</b>, and <b>24g of fat</b> each. For <b>$1.25 per serving</b>, this recipe <b>covers 6%</b> of your daily requirements of vitamins and minerals. It works well as a side dish. Head to the store and pick up ground cumin, garlic, honey, and a few other things to make it today. It is a <b>reasonably priced</b> recipe for fans of American food. Not a lot of people made this recipe, and 3 would say it hit the spot. It is a good option if you're following a <b>gluten free and lacto ovo vegetarian</b> diet. It is brought to you by Foodista. Taking all factors into account, this recipe <b>earns a spoonacular score of 21%</b>, which is rather bad. <a href=\"https://spoonacular.com/recipes/barbecued-corn-on-the-cob-with-bacon-and-chili-butter-148077\">Barbecued Corn on the Cob with Bacon and Chili Butter</a>, <a href=\"https://spoonacular.com/recipes/curry-butter-corn-on-the-cob-798344\">Curry Butter Corn on the Cob</a>, and <a href=\"https://spoonacular.com/recipes/corn-on-the-cob-with-smoked-butter-338713\">Corn on the Cob with Smoked Butter</a> are very similar to this recipe.",
+    //     "cuisines": [
+    //         "American"
+    //     ],
+    //     "dishTypes": [
+    //         "side dish"
+    //     ],
+    //     "diets": [
+    //         "gluten free",
+    //         "lacto ovo vegetarian"
+    //     ],
+    //     "occasions": [],
+    //     "instructions": "Combine the butter, garlic, honey, and spices in a small saucepan and cook over a gentle heat.\nBrush corn with the flavored butter and cook on the barbecue or under the grill turning regularly until golden.\nBaste continually during the cooking process.",
+    //     "analyzedInstructions": [
+    //         {
+    //             "name": "",
+    //             "steps": [
+    //                 {
+    //                     "number": 1,
+    //                     "step": "Combine the butter, garlic, honey, and spices in a small saucepan and cook over a gentle heat.",
+    //                     "ingredients": [
+    //                         {
+    //                             "id": 1001,
+    //                             "name": "butter",
+    //                             "localizedName": "butter",
+    //                             "image": "https://spoonacular.com/cdn/ingredients_100x100/butter-sliced.jpg"
+    //                         },
+    //                         {
+    //                             "id": 11215,
+    //                             "name": "garlic",
+    //                             "localizedName": "garlic",
+    //                             "image": "https://spoonacular.com/cdn/ingredients_100x100/garlic.png"
+    //                         },
+    //                         {
+    //                             "id": 2035,
+    //                             "name": "spices",
+    //                             "localizedName": "spices",
+    //                             "image": "https://spoonacular.com/cdn/ingredients_100x100/spices.png"
+    //                         },
+    //                         {
+    //                             "id": 19296,
+    //                             "name": "honey",
+    //                             "localizedName": "honey",
+    //                             "image": "https://spoonacular.com/cdn/ingredients_100x100/honey.png"
+    //                         }
+    //                     ],
+    //                     "equipment": [
+    //                         {
+    //                             "id": 404669,
+    //                             "name": "sauce pan",
+    //                             "localizedName": "sauce pan",
+    //                             "image": "https://spoonacular.com/cdn/equipment_100x100/sauce-pan.jpg"
+    //                         }
+    //                     ]
+    //                 },
+    //                 {
+    //                     "number": 2,
+    //                     "step": "Brush corn with the flavored butter and cook on the barbecue or under the grill turning regularly until golden.",
+    //                     "ingredients": [
+    //                         {
+    //                             "id": 1021001,
+    //                             "name": "flavored butter",
+    //                             "localizedName": "flavored butter",
+    //                             "image": "https://spoonacular.com/cdn/ingredients_100x100/butter-sliced.jpg"
+    //                         },
+    //                         {
+    //                             "id": 11168,
+    //                             "name": "corn",
+    //                             "localizedName": "corn",
+    //                             "image": "https://spoonacular.com/cdn/ingredients_100x100/corn.png"
+    //                         }
+    //                     ],
+    //                     "equipment": [
+    //                         {
+    //                             "id": 404706,
+    //                             "name": "grill",
+    //                             "localizedName": "grill",
+    //                             "image": "https://spoonacular.com/cdn/equipment_100x100/grill.jpg"
+    //                         }
+    //                     ]
+    //                 },
+    //                 {
+    //                     "number": 3,
+    //                     "step": "Baste continually during the cooking process.",
+    //                     "ingredients": [],
+    //                     "equipment": []
+    //                 }
+    //             ]
+    //         }
+    //     ],
+    //     "originalId": null,
+    //     "spoonacularScore": 28.163227081298828,
+    //     "spoonacularSourceUrl": "https://spoonacular.com/barbecued-corn-on-the-cob-with-spiced-butter-634300"
+    //     },
+    //     {
+    //     "vegetarian": true,
+    //     "vegan": false,
+    //     "glutenFree": true,
+    //     "dairyFree": false,
+    //     "veryHealthy": false,
+    //     "cheap": false,
+    //     "veryPopular": false,
+    //     "sustainable": false,
+    //     "lowFodmap": false,
+    //     "weightWatcherSmartPoints": 14,
+    //     "gaps": "no",
+    //     "preparationMinutes": -1,
+    //     "cookingMinutes": -1,
+    //     "aggregateLikes": 3,
+    //     "healthScore": 1,
+    //     "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+    //     "license": "CC BY 3.0",
+    //     "sourceName": "Foodista",
+    //     "pricePerServing": 125.13,
+    //     "extendedIngredients": [
+    //         {
+    //             "id": 1145,
+    //             "aisle": "Milk, Eggs, Other Dairy",
+    //             "image": "butter-sliced.jpg",
+    //             "consistency": "SOLID",
+    //             "name": "butter",
+    //             "nameClean": "unsalted butter",
+    //             "original": "8 tablespoons (1 stick) unsalted butter melted",
+    //             "originalName": "(1 stick) unsalted butter melted",
+    //             "amount": 8.0,
+    //             "unit": "tablespoons",
+    //             "meta": [
+    //                 "unsalted",
+    //                 "melted",
+    //                 "(1 stick)"
+    //             ],
+    //             "measures": {
+    //                 "us": {
+    //                     "amount": 8.0,
+    //                     "unitShort": "Tbsps",
+    //                     "unitLong": "Tbsps"
+    //                 },
+    //                 "metric": {
+    //                     "amount": 8.0,
+    //                     "unitShort": "Tbsps",
+    //                     "unitLong": "Tbsps"
+    //                 }
+    //             }
+    //         },
+    //         {
+    //             "id": 11215,
+    //             "aisle": "Produce",
+    //             "image": "garlic.png",
+    //             "consistency": "SOLID",
+    //             "name": "garlic",
+    //             "nameClean": "garlic",
+    //             "original": "1 clove garlic crushed with a little salt",
+    //             "originalName": "garlic crushed with a little salt",
+    //             "amount": 1.0,
+    //             "unit": "clove",
+    //             "meta": [
+    //                 "with a little salt",
+    //                 "crushed"
+    //             ],
+    //             "measures": {
+    //                 "us": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "clove",
+    //                     "unitLong": "clove"
+    //                 },
+    //                 "metric": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "clove",
+    //                     "unitLong": "clove"
+    //                 }
+    //             }
+    //         },
+    //         {
+    //             "id": 19296,
+    //             "aisle": "Nut butters, Jams, and Honey",
+    //             "image": "honey.png",
+    //             "consistency": "LIQUID",
+    //             "name": "honey",
+    //             "nameClean": "honey",
+    //             "original": "1 tablespoon honey",
+    //             "originalName": "honey",
+    //             "amount": 1.0,
+    //             "unit": "tablespoon",
+    //             "meta": [],
+    //             "measures": {
+    //                 "us": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "Tbsp",
+    //                     "unitLong": "Tbsp"
+    //                 },
+    //                 "metric": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "Tbsp",
+    //                     "unitLong": "Tbsp"
+    //                 }
+    //             }
+    //         },
+    //         {
+    //             "id": 2009,
+    //             "aisle": "Spices and Seasonings",
+    //             "image": "chili-powder.jpg",
+    //             "consistency": "SOLID",
+    //             "name": "chilli powder",
+    //             "nameClean": "chili powder",
+    //             "original": "1 teaspoon chilli powder",
+    //             "originalName": "chilli powder",
+    //             "amount": 1.0,
+    //             "unit": "teaspoon",
+    //             "meta": [],
+    //             "measures": {
+    //                 "us": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "tsp",
+    //                     "unitLong": "teaspoon"
+    //                 },
+    //                 "metric": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "tsp",
+    //                     "unitLong": "teaspoon"
+    //                 }
+    //             }
+    //         },
+    //         {
+    //             "id": 1012014,
+    //             "aisle": "Spices and Seasonings",
+    //             "image": "ground-cumin.jpg",
+    //             "consistency": "SOLID",
+    //             "name": "ground cumin",
+    //             "nameClean": "ground cumin",
+    //             "original": "1 teaspoon ground cumin",
+    //             "originalName": "ground cumin",
+    //             "amount": 1.0,
+    //             "unit": "teaspoon",
+    //             "meta": [],
+    //             "measures": {
+    //                 "us": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "tsp",
+    //                     "unitLong": "teaspoon"
+    //                 },
+    //                 "metric": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "tsp",
+    //                     "unitLong": "teaspoon"
+    //                 }
+    //             }
+    //         },
+    //         {
+    //             "id": 1002013,
+    //             "aisle": "Spices and Seasonings",
+    //             "image": "ground-coriander.jpg",
+    //             "consistency": "SOLID",
+    //             "name": "ground coriander",
+    //             "nameClean": "ground coriander",
+    //             "original": "1 teaspoon ground coriander",
+    //             "originalName": "ground coriander",
+    //             "amount": 1.0,
+    //             "unit": "teaspoon",
+    //             "meta": [],
+    //             "measures": {
+    //                 "us": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "tsp",
+    //                     "unitLong": "teaspoon"
+    //                 },
+    //                 "metric": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "tsp",
+    //                     "unitLong": "teaspoon"
+    //                 }
+    //             }
+    //         },
+    //         {
+    //             "id": 1002030,
+    //             "aisle": "Spices and Seasonings",
+    //             "image": "pepper.jpg",
+    //             "consistency": "SOLID",
+    //             "name": "ground pepper",
+    //             "nameClean": "black pepper",
+    //             "original": "1 teaspoon ground black pepper",
+    //             "originalName": "ground black pepper",
+    //             "amount": 1.0,
+    //             "unit": "teaspoon",
+    //             "meta": [
+    //                 "black"
+    //             ],
+    //             "measures": {
+    //                 "us": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "tsp",
+    //                     "unitLong": "teaspoon"
+    //                 },
+    //                 "metric": {
+    //                     "amount": 1.0,
+    //                     "unitShort": "tsp",
+    //                     "unitLong": "teaspoon"
+    //                 }
+    //             }
+    //         },
+    //         {
+    //             "id": 11167,
+    //             "aisle": "Produce",
+    //             "image": "corn-on-the-cob.jpg",
+    //             "consistency": "SOLID",
+    //             "name": "corn cobs",
+    //             "nameClean": "corn on the cob",
+    //             "original": "4 corn cobs, husks removed",
+    //             "originalName": "corn cobs, husks removed",
+    //             "amount": 4.0,
+    //             "unit": "",
+    //             "meta": [],
+    //             "measures": {
+    //                 "us": {
+    //                     "amount": 4.0,
+    //                     "unitShort": "",
+    //                     "unitLong": ""
+    //                 },
+    //                 "metric": {
+    //                     "amount": 4.0,
+    //                     "unitShort": "",
+    //                     "unitLong": ""
+    //                 }
+    //             }
+    //         }
+    //     ],
+    //     "id": 634300,
+    //     "title": "Barbecued Corn on the Cob With Spiced Butter",
+    //     "readyInMinutes": 45,
+    //     "servings": 4,
+    //     "sourceUrl": "https://www.foodista.com/recipe/BNKJW2JQ/barbecued-corn-on-the-cob-with-spiced-butter",
+    //     "image": "https://img.spoonacular.com/recipes/634300-556x370.jpg",
+    //     "imageType": "jpg",
+    //     "summary": "Barbecued Corn on the Cob With Spiced Butter takes roughly <b>45 minutes</b> from beginning to end. This recipe makes 4 servings with <b>301 calories</b>, <b>4g of protein</b>, and <b>24g of fat</b> each. For <b>$1.25 per serving</b>, this recipe <b>covers 6%</b> of your daily requirements of vitamins and minerals. It works well as a side dish. Head to the store and pick up ground cumin, garlic, honey, and a few other things to make it today. It is a <b>reasonably priced</b> recipe for fans of American food. Not a lot of people made this recipe, and 3 would say it hit the spot. It is a good option if you're following a <b>gluten free and lacto ovo vegetarian</b> diet. It is brought to you by Foodista. Taking all factors into account, this recipe <b>earns a spoonacular score of 21%</b>, which is rather bad. <a href=\"https://spoonacular.com/recipes/barbecued-corn-on-the-cob-with-bacon-and-chili-butter-148077\">Barbecued Corn on the Cob with Bacon and Chili Butter</a>, <a href=\"https://spoonacular.com/recipes/curry-butter-corn-on-the-cob-798344\">Curry Butter Corn on the Cob</a>, and <a href=\"https://spoonacular.com/recipes/corn-on-the-cob-with-smoked-butter-338713\">Corn on the Cob with Smoked Butter</a> are very similar to this recipe.",
+    //     "cuisines": [
+    //         "American"
+    //     ],
+    //     "dishTypes": [
+    //         "side dish"
+    //     ],
+    //     "diets": [
+    //         "gluten free",
+    //         "lacto ovo vegetarian"
+    //     ],
+    //     "occasions": [],
+    //     "instructions": "Combine the butter, garlic, honey, and spices in a small saucepan and cook over a gentle heat.\nBrush corn with the flavored butter and cook on the barbecue or under the grill turning regularly until golden.\nBaste continually during the cooking process.",
+    //     "analyzedInstructions": [
+    //         {
+    //             "name": "",
+    //             "steps": [
+    //                 {
+    //                     "number": 1,
+    //                     "step": "Combine the butter, garlic, honey, and spices in a small saucepan and cook over a gentle heat.",
+    //                     "ingredients": [
+    //                         {
+    //                             "id": 1001,
+    //                             "name": "butter",
+    //                             "localizedName": "butter",
+    //                             "image": "https://spoonacular.com/cdn/ingredients_100x100/butter-sliced.jpg"
+    //                         },
+    //                         {
+    //                             "id": 11215,
+    //                             "name": "garlic",
+    //                             "localizedName": "garlic",
+    //                             "image": "https://spoonacular.com/cdn/ingredients_100x100/garlic.png"
+    //                         },
+    //                         {
+    //                             "id": 2035,
+    //                             "name": "spices",
+    //                             "localizedName": "spices",
+    //                             "image": "https://spoonacular.com/cdn/ingredients_100x100/spices.png"
+    //                         },
+    //                         {
+    //                             "id": 19296,
+    //                             "name": "honey",
+    //                             "localizedName": "honey",
+    //                             "image": "https://spoonacular.com/cdn/ingredients_100x100/honey.png"
+    //                         }
+    //                     ],
+    //                     "equipment": [
+    //                         {
+    //                             "id": 404669,
+    //                             "name": "sauce pan",
+    //                             "localizedName": "sauce pan",
+    //                             "image": "https://spoonacular.com/cdn/equipment_100x100/sauce-pan.jpg"
+    //                         }
+    //                     ]
+    //                 },
+    //                 {
+    //                     "number": 2,
+    //                     "step": "Brush corn with the flavored butter and cook on the barbecue or under the grill turning regularly until golden.",
+    //                     "ingredients": [
+    //                         {
+    //                             "id": 1021001,
+    //                             "name": "flavored butter",
+    //                             "localizedName": "flavored butter",
+    //                             "image": "https://spoonacular.com/cdn/ingredients_100x100/butter-sliced.jpg"
+    //                         },
+    //                         {
+    //                             "id": 11168,
+    //                             "name": "corn",
+    //                             "localizedName": "corn",
+    //                             "image": "https://spoonacular.com/cdn/ingredients_100x100/corn.png"
+    //                         }
+    //                     ],
+    //                     "equipment": [
+    //                         {
+    //                             "id": 404706,
+    //                             "name": "grill",
+    //                             "localizedName": "grill",
+    //                             "image": "https://spoonacular.com/cdn/equipment_100x100/grill.jpg"
+    //                         }
+    //                     ]
+    //                 },
+    //                 {
+    //                     "number": 3,
+    //                     "step": "Baste continually during the cooking process.",
+    //                     "ingredients": [],
+    //                     "equipment": []
+    //                 }
+    //             ]
+    //         }
+    //     ],
+    //     "originalId": null,
+    //     "spoonacularScore": 28.163227081298828,
+    //     "spoonacularSourceUrl": "https://spoonacular.com/barbecued-corn-on-the-cob-with-spiced-butter-634300"
+    //     },
+    // ];
 
     function getMainRecipes(){
         if(!randomRecipes.value){
@@ -5559,5 +5559,21 @@ export const useRecipesStore = defineStore('recipeStore', () => {
         }
     }
 
-    return { randomRecipes, getMainRecipes, myRecipes }
+    function AddMyRecipe(recipeTitle, ingredients, servings, readyInMinutes, selectedDiets, preperationSteps){
+        const newId = myRecipes.value.length <= 0 ? 1 : myRecipes.value.length;
+        console.log(newId)
+
+        myRecipes.value.push({
+            title: recipeTitle,
+            id: newId,
+            image: '',
+            extendedIngredients: ingredients,
+            servings: servings,
+            readyInMinutes: readyInMinutes,
+            diets: selectedDiets,
+            analyzedInstructions: preperationSteps,
+        });
+    }
+
+    return { randomRecipes, getMainRecipes, myRecipes, AddMyRecipe };
 })
