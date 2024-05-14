@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import { useRecipesStore } from '@/stores/recipesStore';
+import RecipeImgDialog from '@/components/RecipeImgDialog.vue';
 
 const recipeStore = useRecipesStore();
 let recipeTitle = ref(null);
@@ -59,6 +60,12 @@ function addStep() {
 
 let servings = ref(null);
 let readyInMinutes = ref(null);
+let img = ref('');
+const existingImg = img.length > 0;
+
+function setImg(name) {
+    img.value = name
+}
 
 
 // Rules
@@ -71,8 +78,7 @@ const notNull = (text) => !text ? 'must select an option' : null;
 const titleCorrect = () => (recipeTitle.value && recipeTitle.value.length > 4 && /^[^\d]*$/.test(recipeTitle.value)) ? true : false;
 
 function Save() {
-    recipeStore.AddMyRecipe(recipeTitle.value, ingredients.value, servings.value, readyInMinutes.value, selectedDiets.value, preperationSteps.value);
-    // console.log(recipeTitle.value, ingredients.value, servings.value, readyInMinutes.value, selectedDiets.value, preperationSteps.value)
+    recipeStore.AddMyRecipe(recipeTitle.value, img.value, ingredients.value, servings.value, readyInMinutes.value, selectedDiets.value, preperationSteps.value);
 }
 
 </script>
@@ -80,7 +86,6 @@ function Save() {
 <template>
     <v-card class="editRecipePage pa-4 pb-8">
         <v-form @submit.prevent v-model="valid">
-            {{ recipeStore.myRecipes }}
             <h3 v-if="recipeTitle && !editTitle" @click="editTitle = true">{{ recipeTitle }}</h3>
             <div class="d-flex align-center" v-if="!recipeTitle || editTitle">
                 <v-text-field label="Recipe Title" v-model="recipeTitle" @keydown.enter="setTitle()" :rules="[isText]"
@@ -144,6 +149,12 @@ function Save() {
                 <v-spacer />
                 <img @click="addStep()" alt="add preparation step button" src="../assets/btn-add.svg" class="addBtn" />
             </div>
+            <div class="d-flex justify-center">
+                <img v-if="recipeStore.myrecipeImg.filter(i => i.title === img).length !== 0"
+                    :src="recipeStore.myrecipeImg.filter(i => i.title === img)[0].img" :alt="img"
+                    style="width: 12rem;" />
+            </div>
+            <RecipeImgDialog @setImgEmit="setImg" />
             <v-btn type="submit" class="save" block outlined elevation="0" @click="Save" :disabled="!valid">Save</v-btn>
         </v-form>
     </v-card>

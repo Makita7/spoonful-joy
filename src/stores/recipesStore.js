@@ -1,6 +1,15 @@
 import { defineStore } from 'pinia';
 import RecipeServices from '@/services/RecipeServices';
 import { ref } from 'vue';
+import appetizer from '../assets/food-appetizer.png';
+import foodBreakfast from '../assets/food-breakfast.png';
+import coldBeverage from '../assets/food-cold-beverage.png';
+import dessert from '../assets/food-dessert.png';
+import dinner from '../assets/food-dinner.png';
+import hotBeverage from '../assets/food-hot-beverage.png';
+import pasta from '../assets/food-pasta.png';
+import salad from '../assets/food-salad.png';
+import seafood from '../assets/food-seafood.png';
 
 export const useRecipesStore = defineStore('recipeStore', () => {
     let randomRecipes = ref(null);
@@ -5559,14 +5568,14 @@ export const useRecipesStore = defineStore('recipeStore', () => {
         }
     }
 
-    function AddMyRecipe(recipeTitle, ingredients, servings, readyInMinutes, selectedDiets, preperationSteps){
+    function AddMyRecipe(recipeTitle, img, ingredients, servings, readyInMinutes, selectedDiets, preperationSteps){
         const newId = myRecipes.value.length <= 0 ? 1 : myRecipes.value.length;
         console.log(newId)
 
         myRecipes.value.push({
             title: recipeTitle,
             id: newId,
-            image: '',
+            image: img,
             extendedIngredients: ingredients,
             servings: servings,
             readyInMinutes: readyInMinutes,
@@ -5575,5 +5584,55 @@ export const useRecipesStore = defineStore('recipeStore', () => {
         });
     }
 
-    return { randomRecipes, getMainRecipes, myRecipes, AddMyRecipe };
+    const myrecipeImg = ref([
+        {
+            id: 1,
+            img: appetizer,
+            title: 'appetizer',
+        },
+        {
+            id: 2,
+            img: foodBreakfast,
+            title: 'food-breakfast',
+        },
+        {
+            id: 3,
+            img: coldBeverage,
+            title: 'cold-beverage',
+            beverage: true,
+        },
+        {
+            id: 4,
+            img: dessert,
+            title: 'dessert',
+        },
+        {
+            id: 5,
+            img: dinner,
+            title: 'dinner',
+        },
+        {
+            id: 6,
+            img: hotBeverage,
+            title: 'hot-beverage',
+            beverage: true,
+        },
+        {
+            id: 7,
+            img: pasta,
+            title: 'pasta',
+        },
+        {
+            id: 8,
+            img: salad,
+            title: 'salad',
+        },
+        {
+            id: 9,
+            img: seafood,
+            title: 'seafood',
+        },
+    ]);
+
+    return { randomRecipes, getMainRecipes, myRecipes, AddMyRecipe, myrecipeImg,  };
 })
