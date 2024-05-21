@@ -14,6 +14,8 @@ const recipeStore = useRecipesStore();
             :title="i.title" :id="i.id" :img="i.image" :data="i" :myRecipe="true" />
         <div v-else class="text-center">
             <p>No Recipes Yet...</p>
+        </div>
+        <div class="text-center">
             <RouterLink to="edit">
                 <v-btn class="mt-4" elevation="0" color="var(--beige-m)" prepend-icon="mdi-plus">add recipe</v-btn>
             </RouterLink>

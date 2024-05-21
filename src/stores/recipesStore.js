@@ -5570,7 +5570,6 @@ export const useRecipesStore = defineStore('recipeStore', () => {
 
     function AddMyRecipe(recipeTitle, img, ingredients, servings, readyInMinutes, selectedDiets, preperationSteps){
         const newId = myRecipes.value.length <= 0 ? 1 : myRecipes.value.length;
-        console.log(newId)
 
         myRecipes.value.push({
             title: recipeTitle,

@@ -33,7 +33,7 @@ function ChangeImages(title) {
                 <div class="d-flex flex-wrap justify-space-evenly ">
                     <div @click="ChangeImages(i.title)" v-for="i in recipeStore.myrecipeImg" :key="i.id"
                         class="cont mb-2" :class="i.title === img ? 'selected' : ''">
-                        <h4 class="mb-4">{{ i.title }}</h4>
+                        <h4 class="mb-4">{{ i.title.replace('-', ' ') }}</h4>
                         <img :alt="i.title" :src="i.img" :class="i.beverage === true ? 'beverage' : ''" />
                     </div>
                 </div>
